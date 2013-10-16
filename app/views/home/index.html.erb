@@ -1,19 +1,18 @@
-<script src="typed.js"></script>
+
+
 <script>
-  $(function(){
-
-
-  	  $(".element").typed({
-        strings: ["First sentence.", "Second sentence."],
-        typeSpeed: 20, // typing speed
-        backDelay: 2000, // pause before backspacing
-      });
-
-
-  });
+    $(function(){
+        $(".sites").typed({
+            strings: ["Trip Advisor.", "Google.", "Yelp."],
+            typeSpeed: 30, // typing speed
+            backDelay: 2000, // pause before backspacing
+            loop: true, // loop on or off (true or false)
+            loopCount: false, // number of loops, false = infinite
+            callback: function(){ } // call function after typing is done
+        });
+    });
 </script>
 
-<div class="element"></div>
 
 <div class="header">
 	<div class="wrapper">
@@ -30,7 +29,7 @@
 	<div class="wrapper">
 		<h1 class="title">Grow your hotel business with good reviews</h1>
 		<div class="right-box">
-			<div class="text">Prevent bad online reviews before they happen, recieve more good reviews, and move up the rankings on Trip Advisor</div>
+			<div class="text">Prevent bad online reviews before they happen, recieve more good reviews, and move up the rankings on <span class='sites'></span></div>
 			<div class="reviews"><%= image_tag('reviews.png') %></div>
 			<div class="button"><div class="signup">Start Free Trial Now</div></div>
 		</div>
