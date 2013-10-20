@@ -3,7 +3,7 @@
 <script>
     $(function(){
         $(".sites").typed({
-            strings: ["Trip Advisor.", "Google.", "Yelp."],
+            strings: ["TripAdvisor.", "Google.", "Yelp."],
             typeSpeed: 30, // typing speed
             backDelay: 2000, // pause before backspacing
             loop: true, // loop on or off (true or false)
@@ -29,7 +29,7 @@
 	<div class="wrapper">
 		<h1 class="title">Grow your hotel business with good reviews</h1>
 		<div class="right-box">
-			<div class="text">Prevent bad online reviews before they happen, recieve more good reviews, and move up the rankings on <span class='sites'></span></div>
+			<div class="text">Prevent bad online reviews before they happen, receive more good reviews, and move up the rankings on <span class='sites'></span></div>
 			<div class="reviews"><%= image_tag('reviews.png') %></div>
 			<div class="button"><div class="signup">Start Free Trial Now</div></div>
 		</div>
@@ -47,19 +47,19 @@
 	<div class="wrapper">
 		<h2 class="title">Good Reviews Drive Business</h2>
 		<div class="one-third">
+			<h3>Increase Revenue</h3>
+			<p class="number">+11.2%</p>
+			<p class="description">The amount you could increase your price with a 20% improvement in ranking.</p>
+		</div>
+		<div class="one-third">
 			<h3>Increase Customers</h3>
-			<p class="number">+25%</p>
-			<p class="description">Sites with reviews collect 25% more inbound leads</p>
+			<p class="number">49%</p>
+			<p class="description">Find reviews the most useful resource when planning a trip.</p>
 		</div>
 		<div class="one-third">
-			<h3>Increase Good Reviews</h3>
-			<p class="number">34%</p>
-			<p class="description">Sites with reviews collect 25% more inbound leads</p>
-		</div>
-		<div class="one-third">
-			<h3>Increase Word of Mouth</h3>
-			<p class="number">X12</p>
-			<p class="description">Sites with reviews collect 25% more inbound leads</p>
+			<h3>Increased Loyalty</h3>
+			<p class="number">93%</p>
+			<p class="description">Of travelers worldwide say their booking decisions are impacted by online reviews. </p>
 		</div>
 		<div class="graph"></div>
 	</div>
@@ -67,21 +67,22 @@
 
 <div class="features">
 	<div class="wrapper">
-		<h2 class="title">The impact on your business is huge.</h2>
+		<h2 class="title">The things that matter most to your business.</h2>
 		<div class="one-third one">
 			<div class="icon"><%= image_tag('feature-1.png') %></div>
 			<h3>Squash Bad Reviews</h3>
-			<p class="description">Lorem ipsum dolor sit amet, consect adipisin elit. Mauris euismod, sapien ac bibendum mollis, nisi dui tempus turpis, non aliquam augue massa quis nunc. Aenean vitae est erat. </p>
+			<p class="description">Squash bad reviews before they happen instead of having to respond to negative reviews once they are already public. Prevention through email follows ups and surveys is proven to be better than damage control. </p>
 		</div>
 		<div class="one-third two">
 			<div class="icon"><%= image_tag('feature-2.png') %></div>
 			<h3>Important Feedback</h3>
-			<p class="description">Lorem ipsum dolor sit amet, consect adipisin elit. Mauris euismod, sapien ac bibendum mollis, nisi dui tempus turpis, non aliquam augue massa quis nunc. Aenean vitae est erat. </p>
+			<p class="description">Recieve good and bad feedback before it is public. We give you clear and actionable reports from your customer surveys so you and your hotel staff can easily understand them.</p>
 		</div>
 		<div class="one-third three">
 			<div class="icon"><%= image_tag('feature-3.png') %></div>
 			<h3>Automated</h3>
-			<p class="description">Lorem ipsum dolor sit amet, consect adipisin elit. Mauris euismod, sapien ac bibendum mollis, nisi dui tempus turpis, non aliquam augue massa quis nunc. Aenean vitae est erat. </p>
+			<!-- <p class="description">Emails with a survey are automatically sent to a customer after a stay, results are organized and displayed, reviews are filtered, good reviews are encouraged to post to TripAdvisor and bad reviews are brought to your attention.</p> -->
+			<p class="description">Manage your reviews and reputation in only a few minutes a day. Many parts of the process are automated and only negative survey results are brought to your attention.</p>
 		</div>
 	</div>
 </div>
@@ -89,42 +90,51 @@
 <div class="how-works">
 	<div class="wrapper">
 		<h2 class="title">Lightweight Affordable Reputation Management</h2>
-		<div class="diagram"></div>
-		<div class="list">
-			<div class="list-item">
-				<div class="number one"><span>1</span></div>
-				<p class="description">Easily import your current customers by
-excel and manually. We also offer custom
-solutions to integrate with existing 
-software.</p>
+		<div class="sub-title">How SimpleReview works to get you more good reviews and prevents bad reviews.</div>
+	</div>
+		
+		<div class="feature-item one">
+			<div class="wrapper">
+			<div class="number"><span>1</span></div>
+			<div class="description">
+				<h5>Import & Follow Up With Email</h5>
+				<p>Easily import your current customers by excel, manually or custom integration. Then once a customer stays at your hotel they will recieve a follow up "Thank You" email along with a survey asking them about their stay. Email content and times can customized and offer various deals/offers as incentives to complete the survey.</p>
 			</div>
-			<div class="list-item">
-				<div class="number two"><span>2</span></div>
-				<p class="description">Customers automatically recieve thank you
-email and survey after their stay. You can 
-view survey results and feedback in realtime.
-You can also send emails at other custom
-time intervals.</p>
-			</div>
-			<div class="list-item">
-				<div class="number three"><span>3</span></div>
-				<p class="description">Positive reviews are succesfully captured 
-review sites, you will begin to move up 
-the rankings get more customers and increase
-revenue, you will also recieve actionable reports
-to continuosly improve your service.</p>
-			</div>
-			<div class="list-item four">
-				<div class="number four"><span>4</span></div>
-				<p class="description">Good survey results are automatically 
-followed up with a suggestions to share
-their feedback on reviews sites of your 
-choice. Bad feedback is alerted to you 
-so you can handle the situation and respond
-to the customer personally to solve the 
-problem.</p>
+
+			<%= image_tag('how-1.png') %>
+
 			</div>
 		</div>
+
+		<div class="feature-item two">
+			<div class="wrapper">
+			<div class="number"><span>2</span></div>
+			<div class="description">
+				<h5>Filter Surveys</h5>
+				<p>Customers who leave positive surveys are then encouraged to share their great experiences on a social review site of your choice. Negative surveys on the other hand are alerted to you so that you can personally handle and respond to them if needed before they are posted publicaly. </p>
+			</div>
+
+			<%= image_tag('how-2.png') %>
+
+			</div>
+		</div>
+
+		<div class="feature-item three">
+			<div class="wrapper">
+			<div class="number"><span>3</span></div>
+			<div class="description">
+				<h5>Get More Customers & Actionable Feedback</h5>
+				<p> You will also recieve actionable reports based on the survey results so you can continously work to improve your service. As time goes on your number of good reviews on sites will increase significantly while bad reviews will be prevented. You will move up the rankings and effortlessly pull in more and more customers.</p>
+			</div>
+			
+			<%= image_tag('how-3.png') %>
+
+			</div>
+		</div>
+	<!-- 	<div class="list-item four">
+				<div class="number four"><span>4</span></div>
+				<p class="description">Recieve actionable reports based on survey results so you can continuosly work to improve your service. Also receive important analytics to track the effectiveness of your email and survey efforts.</p>
+			</div> -->
 	</div>
 </div>
 
@@ -141,10 +151,10 @@ problem.</p>
 			<div class="menu">
 				<ul>
 					<li>Company</li>
-					<li>Press</li>
+					<li>Pricing</li>
 					<li>Contact Us</li>
-					<li>Privacy Policy</li>
-					<li>Terms of Use</li>
+				<!-- 	<li>Privacy Policy</li>
+					<li>Terms of Use</li> -->
 				</ul>
 			</div>
 			<div class="social"></div>

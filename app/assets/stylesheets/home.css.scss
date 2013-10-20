@@ -11,9 +11,6 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-p {
-	font-size: 60px;
-}
 
 h1{}
 
@@ -24,16 +21,38 @@ h3{}
 a{}
 
 #typed-cursor{
-  opacity: 1;
-  font-weight: 100;
-  // add prefixes
-  animation: blink 0.7s infinite;
+    opacity: 1;
+    font-weight: 100;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
 }
-
 @-keyframes blink{
-  0% { opacity:1; }
-  50% { opacity:0; }
-  100% { opacity:1; }
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-ms-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-o-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
 
 @mixin button($width) {
@@ -130,8 +149,8 @@ a{}
 }
 
 .main {
-	height: 580px;
-	padding-top: 39px;
+	height: 566px;
+	padding-top: 43px;
 	position: relative;
 	background: image-url("cover-top.png") no-repeat center center; 
   	-webkit-background-size: cover;
@@ -152,7 +171,7 @@ a{}
 		width: 40%;
 		float: right;
 		height: 100%;
-		padding-top: 74px;
+		padding-top: 55px;
 		padding-right: 55px;
 
 
@@ -206,6 +225,7 @@ a{}
   			padding: 15px 35px;
   			background-color: rgba(41, 43, 51, 0.6);
   			letter-spacing: .03em;
+  			cursor: pointer;
 
   			.arrow {
   				background: image-url("down-arrow.png") no-repeat center center; 
@@ -357,99 +377,85 @@ a{}
 
 .how-works{
 	background-color: #f3f3f3;
-	height: 1070px;
+	height: 1462px;
 
 	.title {
 		font-size: 42px;
-		padding-bottom: 40px;
 		padding-top: 60px;
+		width: 100%;
+		text-align: center;
+		color: #4a4a4a;
+		font-weight: 300;
+	}
+
+	.sub-title {
+		font-size: 21px;
+		padding-bottom: 40px;
+		padding-top: 12px;
 		border-bottom: 1px solid #c4c4c4;
 		width: 100%;
 		text-align: center;
 		color: #4a4a4a;
-		margin-bottom: 75px;
+		margin-bottom: 25px;
 		font-weight: 300;
 	}
 
-	.diagram {
-		width: 550px;
-		height: 790px;
-		float: left;
-		display: block;
-	}
+		.two {
+			background-color: darken(#f3f3f3, 2%);
+			border-bottom: 1px solid darken(#f3f3f3, 4%);
+			border-top: 1px solid darken(#f3f3f3, 4%);
+		}
 
-	.list {
-		width: 45%;
-		height: 100%;
+	.feature-item {
+		line-height: 24px;
+		height: 200px;
+		padding: 100px 0;
+		width: 100%;
 		float: left;
 
-		.list-item {
-			margin: 30px 0;
-			line-height: 24px;
-			width: 100%;
+		.number {
+			padding: 20px 20px;
+			background: image-url("circle.png") no-repeat center center; 
+			width: 25px;
+			height: 25px;
+			$br: 30px;
+			-webkit-border-radius: $br; 
+ 			-moz-border-radius: $br; 
+ 			border-radius: $br;
+ 			float: left;
+
+ 			span {
+ 				color: #fff;
+ 				font-size: 40px;
+ 				font-weight: 500;
+ 			}
+
+		}
+
+		img {
+			float: right;
+		}
+
+		.description{
+			font-size: 17px;
+			color: #4a4a4a;
 			float: left;
+			width: 390px;
+			font-weight: 300;
+			padding-left: 40px;
+			line-height: 25px;
 
-			.one {
-				margin-top: 10px;
-
-				span {
-					display: block;
-					margin: 2px 0 0 6px;
-				}
+			p {
+				text-indent: 20px;
 			}
 
-			.two {
-				margin-top: 31px;
-				span {
-					display: block;
-					margin: 1px 0 0 2px;
-				}
-			}
-
-			.three {
-				margin-top: 30px;
-				span {
-					display: block;
-					margin: 2px 0 0 3px;
-				}
-			}
-
-			.four {
-				margin-top: 40px;
-				span {
-					display: block;
-					margin: 1px 0 0 1px;
-				}
-			}
-
-			.number {
-				padding: 20px 20px;
-				background: image-url("circle.png") no-repeat center center; 
-				width: 25px;
-				height: 25px;
-				$br: 30px;
-				-webkit-border-radius: $br; 
- 				-moz-border-radius: $br; 
-  				border-radius: $br;
-  				float: left;
-
-  				span {
-  					color: #fff;
-  					font-size: 40px;
-  					font-weight: 500;
-  				}
-
-			}
-			.description{
+			h5 {
 				font-size: 18px;
-				color: #4a4a4a;
-				float: left;
-				width: 355px;
-				font-weight: 300;
-				padding-left: 30px;
-				line-height: 25px;
+				font-weight: 600;
+				padding-bottom: 20px;
 			}
 		}
+		
 	}
 
 }
