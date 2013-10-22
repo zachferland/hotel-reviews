@@ -1,0 +1,35 @@
+<div class="signup-page">
+
+	<div class="wrapper">
+		<div class="logo"><%= image_tag('logo-light.png') %></div>
+		<h1>Welcome, create your account to get started</h1>
+
+		<%= form_for :user do |f| %>
+			<div class="field">
+				<span class="icon"></span>
+				<%= f.text_field :hotel, :placeholder => "Hotel Name" %>
+			</div>
+
+			<div class="field">
+				<span class="icon"></span>
+				<%= f.text_field  :name, :placeholder => "Your Name"%>
+			</div>
+
+			<div class="field">
+				<span class="icon"></span>
+				<%= f.text_field  :email, :placeholder => "Email" %>
+			</div>
+
+			<div class="field">
+				<span class="icon"></span>
+				<%= f.text_field  :phone, :placeholder => "Phone Number" %>
+			</div>
+			
+			 <div class="button"><div class="submit">
+			   <%= f.submit :value => "Get Started"%>
+			 </div></div>
+		<% end %>
+		
+	</div>
+	
+</div>

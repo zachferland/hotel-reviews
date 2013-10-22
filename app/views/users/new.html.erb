@@ -1,0 +1,70 @@
+
+<div class="signup-page">
+
+	<div class="wrapper">
+		<div class="logo"><%= image_tag('logo-light.png') %></div>
+		<h1>Welcome, create your account to get started</h1>
+
+		<%= form_for(@user) do |f| %>
+		 	<% if @user.errors.any? %>
+  			  <div id="error_explanation">
+  			    <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+			
+  			    <ul>
+  			    <% @user.errors.full_messages.each do |msg| %>
+  			      <li><%= msg %></li>
+  			    <% end %>
+  			    </ul>
+  			  </div>
+  			<% end %>
+			<div class="field">
+				<span class="icon"></span>
+				<%= f.text_field :hotel, :placeholder => "Hotel Name" %>
+			</div>
+
+			<div class="field">
+				<span class="icon"></span>
+				<%= f.text_field  :name, :placeholder => "Your Name"%>
+			</div>
+
+			<div class="field">
+				<span class="icon"></span>
+				<%= f.text_field  :email, :placeholder => "Email" %>
+			</div>
+
+			<div class="field">
+				<span class="icon"></span>
+				<%= f.text_field  :phone, :placeholder => "Phone Number" %>
+			</div>
+			
+			 <div class="button"><div class="submit">
+			   <%= f.submit :value => "Get Started"%>
+			 </div></div>
+		<% end %>
+
+
+		
+	</div>
+	
+</div>
+
+<div class="footer">
+	<div class="wrapper">
+		<div class="top-half">
+			<div class="menu">
+				<ul>
+					<li>Company</li>
+					<li>Pricing</li>
+					<li>Contact Us</li>
+				<!-- 	<li>Privacy Policy</li>
+					<li>Terms of Use</li> -->
+				</ul>
+			</div>
+			<div class="social"></div>
+		</div>
+		<div class="bottom-half">
+			<p class="question">Questions? Email hello@simplereview.com</p>
+			<p class="copyright">Copyright 2013 SimpleReview Inc.</p>
+		</div>
+	</div>
+</div>
