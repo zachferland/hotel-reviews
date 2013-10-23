@@ -16,11 +16,11 @@
 
 <div class="header">
 	<div class="wrapper">
-		<div class="logo"><%= image_tag('logo.png') %></div>
-		<div class="button"><div class="login">Login</div></div>
+		<%= link_to(root_path) do %><div class="logo"><%= image_tag('logo.png') %></div><% end %>
+		<%= link_to("users/new") do %><div class="button"><div class="login">Login</div></div><% end %>
 		<ul class="menu">
-			<li>About</li>
-			<li>Pricing</li>
+			<!-- <li>About</li> -->
+			<li><%= link_to "Pricing", "pricing" %></li>
 		</ul>
 	</div>
 </div>
@@ -31,7 +31,7 @@
 		<div class="right-box">
 			<div class="text">Prevent bad online reviews before they happen, receive more good reviews, and move up the rankings on <span class='sites'></span></div>
 			<div class="reviews"><%= image_tag('reviews.png') %></div>
-			<div class="button"><div class="signup">Start Free Trial Now</div></div>
+			<%= link_to("pricing") do %><div class="button"><div class="signup">Start Free Trial Now</div></div><% end %>
 		</div>
 		<div class="bottom-box">
 			<div class="learn-more">
@@ -54,12 +54,12 @@
 		<div class="one-third">
 			<h3>Increase Customers</h3>
 			<p class="number">49%</p>
-			<p class="description">Find reviews the most useful resource when planning a trip.</p>
+			<p class="description">Of travelers find reviews the most useful resource when planning a trip.</p>
 		</div>
 		<div class="one-third">
-			<h3>Increased Loyalty</h3>
-			<p class="number">93%</p>
-			<p class="description">Of travelers worldwide say their booking decisions are impacted by online reviews. </p>
+			<h3>Increased Feedback</h3>
+			<p class="number">X6</p>
+			<p class="description">On average 6 times as many guest surveys are completed than number of reviews on social review sites.</p>
 		</div>
 		<div class="graph"></div>
 	</div>
@@ -141,7 +141,7 @@
 <div class="action-call">
 	<div class="wrapper">
 		<h2 class="title">Start building a 5 star reputation in only a few minutes a day.</h2>
-		<div class="button"><div class="signup">Start Now</div></div>
+		<%= link_to("pricing") do %><div class="button"><div class="signup">Start Now</div></div><% end %>
 	</div>
 </div>
 
@@ -150,9 +150,9 @@
 		<div class="top-half">
 			<div class="menu">
 				<ul>
-					<li>Company</li>
-					<li>Pricing</li>
-					<li>Contact Us</li>
+					<!-- <li>Company</li> -->
+					<li><%= link_to "Pricing", "pricing" %></li>
+					<li><a href="mailto:hello@simplereview">Contact Us</a></li>
 				<!-- 	<li>Privacy Policy</li>
 					<li>Terms of Use</li> -->
 				</ul>
@@ -160,7 +160,7 @@
 			<div class="social"></div>
 		</div>
 		<div class="bottom-half">
-			<p class="question">Questions? Email hello@simplereview.com</p>
+			<p class="question">Questions? Email us at <a href="mailto:hello@simplereview">hello@simplereview.com</a></p>
 			<p class="copyright">Copyright 2013 SimpleReview Inc.</p>
 		</div>
 	</div>

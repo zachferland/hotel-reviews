@@ -2,11 +2,11 @@
 
 <div class="header">
 	<div class="wrapper">
-		<div class="logo"><%= image_tag('logo.png') %></div>
-		<div class="button"><div class="login">Login</div></div>
+		<%= link_to(root_path) do %><div class="logo"><%= image_tag('logo.png') %></div><% end %>
+		<%= link_to("users/new") do %><div class="button"><div class="login">Login</div></div><% end %>
 		<ul class="menu">
-			<li>About</li>
-			<li>Pricing</li>
+			<!-- <li>About</li> -->
+			<!-- <li>Pricing <%= link_to "Pricing" %> </li> -->
 		</ul>
 	</div>
 </div>
@@ -33,7 +33,7 @@
       			</div>
       			<div class="plan">Small</div>
       		</div>
-      		<div class="button"><div class="get-started">Get Started Today</div></div>
+      		<%= link_to("users/new") do %><div class="button"><div class="get-started">Get Started Today</div></div><% end %>
 			<div class="description">For hotels with less with 20 rooms or less.</div>
 		</div>
 		<div class="section">
@@ -45,7 +45,7 @@
       			</div>
       			<div class="plan">Medium</div>
       		</div>
-      		<div class="button"><div class="get-started">Get Started Today</div></div>
+      		<%= link_to("users/new") do %><div class="button"><div class="get-started">Get Started Today</div></div><% end %>
 			<div class="description">For hotels with less with 100 rooms or less.</div>
 		</div>
 		<div class="section">
@@ -57,7 +57,7 @@
       			</div>
       			<div class="plan">Large</div>
       		</div>
-      		<div class="button"><div class="get-started">Get Started Today</div></div>
+      		<%= link_to("users/new") do %><div class="button"><div class="get-started">Get Started Today</div></div><% end %>
 			<div class="description">For hotels with less with 250 rooms or less.</div>
 		</div>
 		<div class="section">
@@ -67,7 +67,7 @@
       			</div>
       			<div class="plan">Custom</div>
       		</div>
-      		<div class="button"><div class="get-started">Contact Us Today</div></div>
+      		<a href="mailto:hello@simplereview"><div class="button"><div class="get-started">Contact Us Today</div></div></a>
 			<div class="description">For hotels with more than 250 rooms and/or multiple locations.</div>
 		</div>
 
@@ -83,9 +83,9 @@
 		<div class="top-half">
 			<div class="menu">
 				<ul>
-					<li>Company</li>
-					<li>Pricing</li>
-					<li>Contact Us</li>
+					<!-- <li>Company</li> -->
+					<li><%= link_to "Pricing", "pricing" %></li>
+					<li><a href="mailto:hello@simplereview">Contact Us</a></li>
 				<!-- 	<li>Privacy Policy</li>
 					<li>Terms of Use</li> -->
 				</ul>
@@ -93,7 +93,7 @@
 			<div class="social"></div>
 		</div>
 		<div class="bottom-half">
-			<p class="question">Questions? Email hello@simplereview.com</p>
+			<p class="question">Questions? Email us at <a href="mailto:hello@simplereview">hello@simplereview.com</a></p>
 			<p class="copyright">Copyright 2013 SimpleReview Inc.</p>
 		</div>
 	</div>
