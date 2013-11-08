@@ -1,4 +1,6 @@
-
+<script>
+	mixpanel.track("Landing Page Load");
+</script>
 
 <script>
     $(function(){
@@ -31,9 +33,9 @@
 		<div class="right-box">
 			<div class="text">Prevent bad online reviews before they happen, receive more good reviews, and move up the rankings on <span class='sites'></span></div>
 			<div class="reviews"><%= image_tag('reviews.png') %></div>
-			<%= link_to("pricing") do %><div class="button"><div class="signup">Start Free Trial Now</div></div><% end %>
+			<%= link_to("pricing") do %><div class="button" onclick="mixpanel.track('Signup Top Click');"><div class="signup">Start Free Trial Now</div></div><% end %>
 		</div>
-		<div class="bottom-box">
+		<div class="bottom-box" onclick="mixpanel.track('Learn More Click');">
 			<div class="learn-more">
 				<div class="arrow"></div>
 				<div class="text">Learn More</div>
@@ -52,12 +54,12 @@
 			<p class="description">The amount you could increase your price with a 20% improvement in ranking.</p>
 		</div>
 		<div class="one-third">
-			<h3>Increase Customers</h3>
+			<h3>Increase Occupancy</h3>
 			<p class="number">49%</p>
 			<p class="description">Of travelers find reviews the most useful resource when planning a trip.</p>
 		</div>
 		<div class="one-third">
-			<h3>Increased Feedback</h3>
+			<h3>Increase Feedback</h3>
 			<p class="number">X6</p>
 			<p class="description">On average 6 times as many guest surveys are completed than number of reviews on social review sites.</p>
 		</div>
@@ -76,7 +78,7 @@
 		<div class="one-third two">
 			<div class="icon"><%= image_tag('feature-2.png') %></div>
 			<h3>Important Feedback</h3>
-			<p class="description">Recieve good and bad feedback before it is public. We give you clear and actionable reports from your customer surveys so you and your hotel staff can easily understand them.</p>
+			<p class="description">Receive good and bad feedback before it is public. We give you clear and actionable reports from your customer surveys so you and your hotel staff can easily understand them.</p>
 		</div>
 		<div class="one-third three">
 			<div class="icon"><%= image_tag('feature-3.png') %></div>
@@ -89,7 +91,7 @@
 
 <div class="how-works">
 	<div class="wrapper">
-		<h2 class="title">Lightweight Affordable Reputation Management</h2>
+		<h2 class="title">Lightweight Affordable Reputation Protection</h2>
 		<div class="sub-title">How SimpleReview works to get you more good reviews and prevents bad reviews.</div>
 	</div>
 		
@@ -98,7 +100,7 @@
 			<div class="number"><span>1</span></div>
 			<div class="description">
 				<h5>Import & Follow Up With Email</h5>
-				<p>Easily import your current customers by excel, manually or custom integration. Then once a customer stays at your hotel they will recieve a follow up "Thank You" email along with a survey asking them about their stay. Email content and times can customized and offer various deals/offers as incentives to complete the survey.</p>
+				<p>Easily import your current customers by excel, manually, or by custom integration. After a customer stays at your hotel they will recieve a follow up "Thank You" email along with a survey asking them about their stay. Email content and send times can be custom.  Various deals can be offered as incentives to complete the survey.</p>
 			</div>
 
 			<%= image_tag('how-1.png') %>
@@ -111,7 +113,7 @@
 			<div class="number"><span>2</span></div>
 			<div class="description">
 				<h5>Filter Surveys</h5>
-				<p>Customers who leave positive surveys are then encouraged to share their great experiences on a social review site of your choice. Negative surveys on the other hand are alerted to you so that you can personally handle and respond to them if needed before they are posted publicaly. </p>
+				<p>Customers who leave positive surveys are then encouraged to share their great experiences on a social review site of your choice. Negative surveys on the other hand are alerted to you. You can then easily respond to the customer and handle the issues before they make a public review. </p>
 			</div>
 
 			<%= image_tag('how-2.png') %>
@@ -124,7 +126,7 @@
 			<div class="number"><span>3</span></div>
 			<div class="description">
 				<h5>Get More Customers & Actionable Feedback</h5>
-				<p> You will also recieve actionable reports based on the survey results so you can continously work to improve your service. As time goes on your number of good reviews on sites will increase significantly while bad reviews will be prevented. You will move up the rankings and effortlessly pull in more and more customers.</p>
+				<p> You will receive actionable reports based on the survey results. As a result you can continuously work to improve your service. As time goes on you will increase the number of reviews your hotel receives, while significantly decreasing bad reviews. You will move up the rankings and effortlessly increase business.</p>
 			</div>
 			
 			<%= image_tag('how-3.png') %>
@@ -141,7 +143,7 @@
 <div class="action-call">
 	<div class="wrapper">
 		<h2 class="title">Start building a 5 star reputation in only a few minutes a day.</h2>
-		<%= link_to("pricing") do %><div class="button"><div class="signup">Start Now</div></div><% end %>
+		<%= link_to("pricing") do %><div class="button" onclick="mixpanel.track('Signup Bottom Click');"><div class="signup">Start Now</div></div><% end %>
 	</div>
 </div>
 
