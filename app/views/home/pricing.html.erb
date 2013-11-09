@@ -2,18 +2,17 @@
 	mixpanel.track("Pricing Page Load");
 </script>
 
-<div class="header">
+<!-- <div class="header">
 	<div class="wrapper">
 		<%= link_to(root_path) do %><div class="logo"><%= image_tag('logo.png') %></div><% end %>
 		<%= link_to("users/new") do %><div class="button"><div class="login">Login</div></div><% end %>
 		<ul class="menu">
-			<!-- <li>About</li> -->
-			<!-- <li>Pricing <%= link_to "Pricing" %> </li> -->
+		
 		</ul>
 	</div>
-</div>
+</div> -->
 
-<!-- zzzzzzzzzzzz -->
+<!-- zzzzzzzzzzzzzzzzzzzzzzzzzzzz -->
 
 <div class="pricing-page">
 
@@ -24,13 +23,14 @@
 		</div>
 	</div>
 
+
 	<div class="price-table">
 	<div class="wrapper">
 		<div class="section">
 			<div class="header">
 				<div class="price one">
         			<span class="sup">$</span>
-        			<span class="amount">49</span>
+        			<span class="amount">39</span>
         			<span class="sub">/MO</span>
       			</div>
       			<div class="plan">Small</div>
@@ -42,7 +42,7 @@
 			<div class="header">
 				<div class="price two">
         			<span class="sup">$</span>
-        			<span class="amount">129</span>
+        			<span class="amount">109</span>
         			<span class="sub">/MO</span>
       			</div>
       			<div class="plan">Medium</div>
@@ -54,7 +54,7 @@
 			<div class="header">
 				<div class="price three">
         			<span class="sup">$</span>
-        			<span class="amount">249</span>
+        			<span class="amount">219</span>
         			<span class="sub">/MO</span>
       			</div>
       			<div class="plan">Large</div>
@@ -69,16 +69,21 @@
       			</div>
       			<div class="plan">Custom</div>
       		</div>
-      		<a href="mailto:hello@simplereview"><div class="button" onclick="mixpanel.track('Custom Plan Click');"><div class="get-started">Contact Us Today</div></div></a>
+      		<a href="mailto:hello@getsimplereview.com"><div class="button" onclick="mixpanel.track('Custom Plan Click');"><div class="get-started">Contact Us Today</div></div></a>
 			<div class="description">For hotels with more than 250 rooms and/or multiple locations.</div>
 		</div>
 
+		<p class="pricing-huh-text"> Interested in our product but don't agree with our pricing?</p>
+			<a href="mailto:hello@getsimplereview.com"><div class="button" onclick="mixpanel.track('Pricing Click');"><div class="pricing-huh-button">Contact us to tell us why</div></div></a>
+
 	</div>
 	</div>
+
+
 
 </div>
 
-<!-- zzzzzzzzzzzz -->
+<!-- zzzzzzzzzzzzzzzzzzzzzzzzzz -->
 
 <div class="footer">
 	<div class="wrapper">
@@ -86,6 +91,7 @@
 			<div class="menu">
 				<ul>
 					<!-- <li>Company</li> -->
+					<li><%= link_to "Home", root_path %></li>
 					<li><%= link_to "Pricing", "pricing" %></li>
 					<li><a href="mailto:hello@getsimplereview.com">Contact Us</a></li>
 				<!-- 	<li>Privacy Policy</li>
@@ -95,8 +101,8 @@
 			<div class="social"></div>
 		</div>
 		<div class="bottom-half">
-			<p class="question">Questions? Email us at <a href="mailto:hello@simplereview">hello@simplereview.com</a></p>
-			<p class="copyright">Copyright 2013 SimpleReview Inc.</p>
+			<p class="question">Questions? Email us at <a href="mailto:hello@getsimplereview.com">hello@getsimplereview.com</a></p>
+			<p class="copyright">Copyright 2013 SimpleReview </p>
 		</div>
 	</div>
 </div>
