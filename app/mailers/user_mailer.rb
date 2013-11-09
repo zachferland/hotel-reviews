@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-  default from: "hello@getsimplereview.com"
+  default from: "hello@timecapsule.io"
 
   def notification_email(user)
     @user = user
