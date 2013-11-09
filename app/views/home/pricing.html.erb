@@ -35,7 +35,7 @@
       			</div>
       			<div class="plan">Small</div>
       		</div>
-      		<%= link_to("users/new") do %><div class="button" onclick="mixpanel.track('Small Plan Click');"><div class="get-started">Get Started Today</div></div><% end %>
+      		<%= link_to("users/new") do %><div class="button" onclick="mixpanel.track('Plan Select', { 'Plan': 'Small' });"><div class="get-started">Get Started Today</div></div><% end %>
 			<div class="description">For hotels with 20 rooms or less.</div>
 		</div>
 		<div class="section">
@@ -47,7 +47,7 @@
       			</div>
       			<div class="plan">Medium</div>
       		</div>
-      		<%= link_to("users/new") do %><div class="button" onclick="mixpanel.track('Medium Plan Click');"><div class="get-started">Get Started Today</div></div><% end %>
+      		<%= link_to("users/new") do %><div class="button" onclick="mixpanel.track('Plan Select', { 'Plan': 'Medium' });"><div class="get-started">Get Started Today</div></div><% end %>
 			<div class="description">For hotels with 100 rooms or less.</div>
 		</div>
 		<div class="section">
@@ -59,7 +59,7 @@
       			</div>
       			<div class="plan">Large</div>
       		</div>
-      		<%= link_to("users/new") do %><div class="button" onclick="mixpanel.track('Large Plan Click');"><div class="get-started">Get Started Today</div></div><% end %>
+      		<%= link_to("users/new") do %><div class="button" onclick="mixpanel.track('Plan Select', { 'Plan': 'Large' });"><div class="get-started">Get Started Today</div></div><% end %>
 			<div class="description">For hotels with 250 rooms or less.</div>
 		</div>
 		<div class="section">
@@ -69,12 +69,12 @@
       			</div>
       			<div class="plan">Custom</div>
       		</div>
-      		<a href="mailto:hello@getsimplereview.com"><div class="button" onclick="mixpanel.track('Custom Plan Click');"><div class="get-started">Contact Us Today</div></div></a>
+      		<a href="mailto:hello@getsimplereview.com"><div class="button" onclick="mixpanel.track('Plan Select', { 'Plan': 'Custom' });"><div class="get-started">Contact Us Today</div></div></a>
 			<div class="description">For hotels with more than 250 rooms and/or multiple locations.</div>
 		</div>
 
 		<p class="pricing-huh-text"> Interested in our product but don't agree with our pricing?</p>
-			<a href="mailto:hello@getsimplereview.com"><div class="button" onclick="mixpanel.track('Pricing Click');"><div class="pricing-huh-button">Contact us to tell us why</div></div></a>
+			<a href="mailto:hello@getsimplereview.com"><div class="button" onclick="mixpanel.track('Plan Select', { 'Plan': 'Request' });"><div class="pricing-huh-button">Contact us to tell us why</div></div></a>
 
 	</div>
 	</div>
